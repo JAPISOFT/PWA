@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>PWA Minimus</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <h1>PWA Minimus</h1>
+    <p>Welcome to PWA Minimus, a minimal PWA.</p>
+    <p>It has a service worker, a web app manifest, a single html page, and an icon.</p>
+    <script>if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function() { console.log("Service worker registered"); });
+    }</script>
+</body>
+</html>
